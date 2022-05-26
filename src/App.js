@@ -4,12 +4,12 @@ import './App.css';
 import About from './components/About';
 import React, {useState} from "react";
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 //automatically included when we type <Navbar>
 // this is app
 
@@ -45,18 +45,18 @@ function App() {
        <Navbar mode={mode} toggleMode={toggleMode}/>  
        <Alert alert={alert}/>
        {/* container is the defined class in bootstrap which center the text and my-3  3pxis spacing in y-axis */}
-       <Router>
-          <Switch>
+       {/* <Router>
+          {/* <Switch>
             {/* foe exact url match  */}
-          <Route exact path="/about"  > <About />
-          </Route>
+          {/* <Route exact path="/about"  > <About />
+          </Route> */}
           
-          <Route exact path="/" > <Textform  showAlert={showAlert} heading ="Enter text to analyze" mode={mode}/>
+          {/* <Route exact path="/" > <Textform  showAlert={showAlert} heading ="Enter text to analyze" mode={mode}/>
          
-          </Route>
-          </Switch>
+          </Route> */}
+          {/* </Switch> */} 
                
-         </Router>
+         {/* </Router> */ }
       
       
            
