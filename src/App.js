@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import React, {useState} from "react";
 import Alert from './components/Alert';
 // import {
@@ -57,7 +57,9 @@ function App() {
           {/* </Switch> */} 
                
          {/* </Router> */ }
-      
+      <div>
+      <Textform  showAlert={showAlert} heading ="Enter text to analyze" mode={mode}/>
+      </div>
       
            
     </>
